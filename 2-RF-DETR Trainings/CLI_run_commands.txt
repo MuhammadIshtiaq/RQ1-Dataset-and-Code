@@ -1,0 +1,39 @@
+python 1_train_rfdetr_on_coco_weights.py \
+  --data /path/to/coco_format_dataset \
+  --out /path/to/output/stage1 \
+  --epochs 150 \
+  --imgsz 672 \
+  --batch 2 \
+  --accum 2 \
+  --lr 5e-5 \
+  --lr_encoder 5e-6 \
+  --early_stop_patience 20 \
+  --early_stop_min_delta 0.0005 \
+  --no_early_stop  # optional: disable early stopping
+
+
+
+python 2_train_rfdetr_on_custom_weights.py \
+  --data /path/to/custom_dataset \
+  --out /path/to/output/stage2 \
+  --stage1_ckpt /path/to/stage1_checkpoint_best_ema.pth \
+  --prefer_ema \
+  --num_classes 2 \
+  --epochs 150 \
+  --imgsz 672 \
+  --batch 2 \
+  --accum 2 \
+  --lr 5e-5 \
+  --lr_encoder 5e-6 \
+  --early_stop_patience 20 \
+  --early_stop_min_delta 0.0005 \
+  --no_early_stop
+
+
+✅ Notes for users:
+--data should point to a COCO-format dataset folder containing train/, valid/, and test/.
+--stage1_ckpt is required for Stage-2 training and should point to the Stage-1 checkpoint.
+--prefer_ema uses the EMA weights from Stage-1 for initialization (recommended).
+You can toggle early stopping via --no_early_stop.
+--num_classes must match the number of classes in your custom dataset.
+

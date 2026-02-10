@@ -1,0 +1,31 @@
+▶ Run command to train multiple yolo models on coco weights
+python 1_train_multiple_yolo_models_on_coco_weights.py \
+  --models yolov8n.pt yolov8m.pt yolov9s.pt yolov9m.pt yolov10m.pt yolov10x.pt yolov11n.pt yolov11l.pt \
+  --data /path/to/your/dataset.yaml \
+  --epochs 150 \
+  --imgsz 640 \
+  --batch 16 \
+  --device 0 \
+  --project runs/detect \
+  --name_prefix exp
+
+▶ Run command to train multiple yolo models on custom weights
+python 2_train_multiple_yolo_models_on_custom_weights.py \
+  --models y8l y8s y8x y9t y10s y11s \
+  --weights_dir /path/to/pretrained_weights \
+  --data /path/to/your/dataset.yaml \
+  --epochs 150 \
+  --imgsz 640 \
+  --batch 16 \
+  --device 0 \
+  --project runs/detect \
+  --name_prefix exp
+
+
+✅ Notes for users:
+--models can be any list of YOLO model identifiers or .pt paths.
+--data should point to a valid YOLO-format YAML dataset file.
+--weights_dir is only needed for custom weights.
+--device can be 0, 1, or a comma-separated list like 0,1 for multi-GPU.
+--name_prefix helps organize multiple runs under the same project.
+

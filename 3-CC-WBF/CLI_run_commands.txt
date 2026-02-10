@@ -1,0 +1,33 @@
+python 1_ccwbf_yolo_combinations_fusion.py \
+  --split test \
+  --models_dir /path/to/your/yolo_models \
+  --data_yaml /path/to/data.yaml \
+  --eval_iou 0.50 \
+  --device cuda \
+  --ccwbf_iou 0.55 \
+  --low_conf 0.001 \
+  --final_conf 0.25 \
+  --imgsz 640 \
+  --out_dir /path/to/your/results_directory
+
+
+python 2_ccwbf_yolo2x_rfdetr1x_combinations_fusion.py \
+--dataset_root /path/to/your/dataset \
+  --split test \
+  --yolo_models \
+    /path/to/yolo_model1.pt \
+    /path/to/yolo_model2.pt \
+    /path/to/yolo_model3.pt \
+  --rfdetr_ckpt /path/to/rfdetr_checkpoint.pth \
+  --out /path/to/output_dir \
+  --imgsz 640 \
+  --low_conf 0.001 \
+  --final_conf 0.25 \
+  --eval_iou 0.50 \
+  --wbf_iou 0.55 \
+  --conf_mode weighted \
+  --rescale_mode min \
+  --weights 1.0,1.0,1.0 \
+  --save_per_image \
+  --device cuda:0
+
