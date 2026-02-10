@@ -1,0 +1,9 @@
+torch==1.10.1+cu102
+torchvision
+rfdetr
+numpy
+pandas
+opencv-python
+tqdm
+Pillow
+typing_extensions

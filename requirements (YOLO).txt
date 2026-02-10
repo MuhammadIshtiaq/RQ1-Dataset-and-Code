@@ -1,0 +1,11 @@
+torch==1.8.1+cu101
+torchvision
+ultralytics==8.3.156
+opencv-python
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+tqdm
+pyyaml
