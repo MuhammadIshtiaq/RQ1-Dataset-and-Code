@@ -1,4 +1,4 @@
-# Contributor Consensus Based Bounding Box Fusion for Weapon Detection
+# Consensus-Driven Bounding Box Fusion for Robust Weapon Detection in Surveillance Systems
 *(Source code and experiment pipeline for the manuscript submitted to **The Visual Computer**)*
 
 **Status:** Submitted to *The Visual Computer*  
@@ -7,7 +7,7 @@
 
 This repository contains the full experimental pipeline for reproducibility of the paper:
 
-> **Contributor Consensus Based Bounding Box Fusion for Weapon Detection**  
+> **Consensus-Driven Bounding Box Fusion for Robust Weapon Detection in Surveillance Systems**  
 > Authors: Muhammad Ishtiaq et al.
 
 ---
@@ -165,7 +165,7 @@ Once the paper is published, cite it as:
 
 ```
 @article{AuthorYear,
-  title   = {Contributor Consensus Based Bounding Box Fusion for Weapon Detection},
+  title   = {Consensus-Driven Bounding Box Fusion for Robust Weapon Detection in Surveillance Systems},
   author  = {Muhammad Ishtiaq, Mingchu Li and ...},
   journal = {The Visual Computer},
   year    = {2026},
