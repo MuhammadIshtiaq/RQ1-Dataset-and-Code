@@ -1,7 +1,7 @@
 # Consensus-Driven Bounding Box Fusion for Robust Weapon Detection in Surveillance Systems
-*(Source code and experiment pipeline for the manuscript submitted to **The Journal of Supercomputing**)*
+*(Source code and experiment pipeline for the manuscript submitted to **Pattern Analysis and Applications**)*
 
-**Status:** Submitted to *The Journal of Supercomputing*  
+**Status:** Submitted to *Pattern Analysis and Applications*  
 **Repository:** Private during review; will be made public upon acceptance  
 **Zenodo DOI:** _to be inserted after reservation_
 
@@ -167,7 +167,7 @@ Once the paper is published, cite it as:
 @article{AuthorYear,
   title   = {Consensus-Driven Bounding Box Fusion for Robust Weapon Detection in Surveillance Systems},
   author  = {Muhammad Ishtiaq, Mingchu Li and ...},
-  journal = {The Journal of Supercomputing},
+  journal = {Pattern Analysis and Applications},
   year    = {2026},
   doi     = {will be provided after acceptance}
 }
