@@ -1,9 +1,7 @@
 # Consensus-Driven Bounding Box Fusion for Robust Weapon Detection in Surveillance Systems
-*(Source code and experiment pipeline for the manuscript submitted to **Pattern Analysis and Applications**)*
+*(Source code and experiment pipeline for the manuscript accepted for publication in **Pattern Analysis and Applications**)*
 
-**Status:** Submitted to *Pattern Analysis and Applications*  
-**Repository:** Private during review; will be made public upon acceptance  
-**Zenodo DOI:** _to be inserted after reservation_
+**Status:** accepted for publication in *Pattern Analysis and Applications* 
 
 This repository contains the full experimental pipeline for reproducibility of the paper:
 
