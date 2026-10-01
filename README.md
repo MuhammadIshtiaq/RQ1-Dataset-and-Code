@@ -1,7 +1,8 @@
 # Consensus-Driven Bounding Box Fusion for Robust Weapon Detection in Surveillance Systems
-*(Source code and experiment pipeline for the manuscript accepted for publication in **Pattern Analysis and Applications**)*
+*(Source code and experiment pipeline for the manuscript published in **Pattern Analysis and Applications**)*
 
-**Status:** accepted for publication in *Pattern Analysis and Applications* 
+**Status:** published in *Pattern Analysis and Applications* 
+**DOI:** https://doi.org/10.1007/s10044-026-01776-y
 
 This repository contains the full experimental pipeline for reproducibility of the paper:
 
@@ -162,13 +163,7 @@ Please read `USAGE_NOTICE.txt` for legal terms.
 Once the paper is published, cite it as:
 
 ```
-@article{AuthorYear,
-  title   = {Consensus-Driven Bounding Box Fusion for Robust Weapon Detection in Surveillance Systems},
-  author  = {Muhammad Ishtiaq, Mingchu Li and ...},
-  journal = {Pattern Analysis and Applications},
-  year    = {2026},
-  doi     = {will be provided after acceptance}
-}
+Ishtiaq, M., Li, M., Alam, T.M. et al. Consensus-driven bounding box fusion for robust weapon detection in surveillance systems. Pattern Anal Applic 29, 203 (2026). https://doi.org/10.1007/s10044-026-01776-y
 ```
 
 ---
